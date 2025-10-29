@@ -165,11 +165,11 @@
           </p>
           <div class="cta-wrap">
             <a class="btn btn-primary" href="#/alphabet" aria-label="ابدأ التعلم الآن"
-              onclick="new Audio('../Sounds/Sound Effects/Sound.mp3').play();">
+              onclick="new Audio('Sounds/Sound Effects/Sound.mp3').play();">
               ابدأ التعلم الآن
             </a>
             <a class="btn btn-outline" href="#/about" aria-label="تعرف اكثر"
-              onclick="new Audio('../Sounds/Sound Effects/Sound.mp3').play();">
+              onclick="new Audio('Sounds/Sound Effects/Sound.mp3').play();">
               تعرف اكثر
             </a>
 
@@ -223,7 +223,7 @@
             <span><i class="dot" style="background:var(--brand-3)"></i> صورة</span>
           </div>
           <a class="btn btn-primary" href="#/alphabet" aria-label="جرب بطاقات الحروف الآن"
-            onclick="new Audio('../Sounds/Sound Effects/Sound.mp3').play();">
+            onclick="new Audio('Sounds/Sound Effects/Sound.mp3').play();">
             جرب بطاقات الحروف الآن
           </a>
         </aside>
@@ -293,34 +293,34 @@
 
     // -------- Dynamic Alphabet Grid --------
     const lettersData = [
-      { l:'أ', word:'أسد', emoji:'🦁', audio:'../Sounds/Alphabet/أ.mp3' },
-      { l:'ب', word:'بطة', emoji:'🦆', audio:'../Sounds/Alphabet/ب.mp3' },
-      { l:'ت', word:'تفاح', emoji:'🍎', audio:'../Sounds/Alphabet/ت.mp3' },
-      { l:'ث', word:'ثعلب', emoji:'🦊', audio:'../Sounds/Alphabet/ث.mp3' },
-      { l:'ج', word:'جمل', emoji:'🦙', audio:'../Sounds/Alphabet/ج.mp3' },
-      { l:'ح', word:'حمامة', emoji:'🕊️', audio:'../Sounds/Alphabet/ح.mp3' },
-      { l:'خ', word:'خبز', emoji:'🥖', audio:'../Sounds/Alphabet/خ.mp3' },
-      { l:'د', word:'ديك', emoji:'🐓', audio:'../Sounds/Alphabet/د.mp3' },
-      { l:'ذ', word:'ذرة', emoji:'🌽', audio:'../Sounds/Alphabet/ذ.mp3' },
-      { l:'ر', word:'رمان', emoji:'🍅', audio:'../Sounds/Alphabet/ر.mp3' },
-      { l:'ز', word:'زرافة', emoji:'🦒', audio:'../Sounds/Alphabet/ز.mp3' },
-      { l:'س', word:'سمكة', emoji:'🐟', audio:'../Sounds/Alphabet/س.mp3' },
-      { l:'ش', word:'شمس', emoji:'☀️', audio:'../Sounds/Alphabet/ش.mp3' },
-      { l:'ص', word:'صقر', emoji:'🦅', audio:'../Sounds/Alphabet/ص.mp3' },
-      { l:'ض', word:'ضفدع', emoji:'🐸', audio:'../Sounds/Alphabet/ض.mp3' },
-      { l:'ط', word:'طائرة', emoji:'✈️', audio:'../Sounds/Alphabet/ط.mp3' },
-      { l:'ظ', word:'ظرف', emoji:'✉️', audio:'../Sounds/Alphabet/ظ.mp3' },
-      { l:'ع', word:'عنب', emoji:'🍇', audio:'../Sounds/Alphabet/ع.mp3' },
-      { l:'غ', word:'غزال', emoji:'🦌', audio:'../Sounds/Alphabet/غ.mp3' },
-      { l:'ف', word:'فيل', emoji:'🐘', audio:'../Sounds/Alphabet/ف.mp3' },
-      { l:'ق', word:'قمر', emoji:'🌙', audio:'../Sounds/Alphabet/ق.mp3' },
-      { l:'ك', word:'كتاب', emoji:'📖', audio:'../Sounds/Alphabet/ك.mp3' },
-      { l:'ل', word:'ليمون', emoji:'🍋', audio:'../Sounds/Alphabet/ل.mp3' },
-      { l:'م', word:'موز', emoji:'🍌', audio:'../Sounds/Alphabet/م.mp3' },
-      { l:'ن', word:'نحلة', emoji:'🐝', audio:'../Sounds/Alphabet/ن.mp3' },
-      { l:'هـ', word:'هلال', emoji:'🌙', audio:'../Sounds/Alphabet/ه.mp3' },
-      { l:'و', word:'وردة', emoji:'🌹', audio:'../Sounds/Alphabet/و.mp3' },
-      { l:'ي', word:'يد', emoji:'✋', audio:'../Sounds/Alphabet/ي.mp3' },
+      { l:'أ', word:'أسد', emoji:'🦁', audio:'Sounds/Alphabet/أ.mp3' },
+      { l:'ب', word:'بطة', emoji:'🦆', audio:'Sounds/Alphabet/ب.mp3' },
+      { l:'ت', word:'تفاح', emoji:'🍎', audio:'Sounds/Alphabet/ت.mp3' },
+      { l:'ث', word:'ثعلب', emoji:'🦊', audio:'Sounds/Alphabet/ث.mp3' },
+      { l:'ج', word:'جمل', emoji:'🦙', audio:'Sounds/Alphabet/ج.mp3' },
+      { l:'ح', word:'حمامة', emoji:'🕊️', audio:'Sounds/Alphabet/ح.mp3' },
+      { l:'خ', word:'خبز', emoji:'🥖', audio:'Sounds/Alphabet/خ.mp3' },
+      { l:'د', word:'ديك', emoji:'🐓', audio:'Sounds/Alphabet/د.mp3' },
+      { l:'ذ', word:'ذرة', emoji:'🌽', audio:'Sounds/Alphabet/ذ.mp3' },
+      { l:'ر', word:'رمان', emoji:'🍅', audio:'Sounds/Alphabet/ر.mp3' },
+      { l:'ز', word:'زرافة', emoji:'🦒', audio:'Sounds/Alphabet/ز.mp3' },
+      { l:'س', word:'سمكة', emoji:'🐟', audio:'Sounds/Alphabet/س.mp3' },
+      { l:'ش', word:'شمس', emoji:'☀️', audio:'Sounds/Alphabet/ش.mp3' },
+      { l:'ص', word:'صقر', emoji:'🦅', audio:'Sounds/Alphabet/ص.mp3' },
+      { l:'ض', word:'ضفدع', emoji:'🐸', audio:'Sounds/Alphabet/ض.mp3' },
+      { l:'ط', word:'طائرة', emoji:'✈️', audio:'Sounds/Alphabet/ط.mp3' },
+      { l:'ظ', word:'ظرف', emoji:'✉️', audio:'Sounds/Alphabet/ظ.mp3' },
+      { l:'ع', word:'عنب', emoji:'🍇', audio:'Sounds/Alphabet/ع.mp3' },
+      { l:'غ', word:'غزال', emoji:'🦌', audio:'Sounds/Alphabet/غ.mp3' },
+      { l:'ف', word:'فيل', emoji:'🐘', audio:'Sounds/Alphabet/ف.mp3' },
+      { l:'ق', word:'قمر', emoji:'🌙', audio:'Sounds/Alphabet/ق.mp3' },
+      { l:'ك', word:'كتاب', emoji:'📖', audio:'Sounds/Alphabet/ك.mp3' },
+      { l:'ل', word:'ليمون', emoji:'🍋', audio:'Sounds/Alphabet/ل.mp3' },
+      { l:'م', word:'موز', emoji:'🍌', audio:'Sounds/Alphabet/م.mp3' },
+      { l:'ن', word:'نحلة', emoji:'🐝', audio:'Sounds/Alphabet/ن.mp3' },
+      { l:'هـ', word:'هلال', emoji:'🌙', audio:'Sounds/Alphabet/ه.mp3' },
+      { l:'و', word:'وردة', emoji:'🌹', audio:'Sounds/Alphabet/و.mp3' },
+      { l:'ي', word:'يد', emoji:'✋', audio:'Sounds/Alphabet/ي.mp3' },
     ];
 
     function buildLetters(){
