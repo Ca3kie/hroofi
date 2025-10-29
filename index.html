@@ -135,6 +135,27 @@
     @media (max-width: 950px){ .hero{ grid-template-columns: 1fr; } .about-wrap{ grid-template-columns: 1fr; } }
     @media (max-width: 720px){ .features{ grid-template-columns: 1fr; } .letters{ grid-template-columns: repeat(4, 1fr); } }
     @media (max-width: 420px){ .letters{ grid-template-columns: repeat(3, 1fr); } .hero h1{ font-size: 32px } }
+  .music-btn {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    background: var(--brand);
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.3s;
+    z-index: 1000;
+  }
+
+  .music-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
   </style>
 </head>
 <body>
@@ -384,5 +405,31 @@
     buildLetters();
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <!-- ====== Background Music ====== -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="Sounds/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" class="music-btn" aria-label="تشغيل/إيقاف الموسيقى">🎵</button>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const btn = document.getElementById('musicToggle');
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (isPlaying) {
+        music.pause();
+        btn.textContent = '🔇';
+      } else {
+        music.play().catch(err => console.log('Autoplay blocked:', err));
+        btn.textContent = '🎵';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+
 </body>
 </html>
