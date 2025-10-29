@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="index.png">
   <title>تعليم الحروف العربية للأطفال</title>
   <meta name="description" content="موقع تعليمي لطيف يعرّف الأطفال على الحروف العربية بصوت وصورة وتفاعل بسيط." />
 
@@ -242,7 +243,8 @@
     <section id="view-contact" class="view" aria-labelledby="contact-title">
       <div class="contact-card">
         <h2 id="contact-title">تواصل معنا</h2>
-        <p>ملاحظاتك تهمّنا! أرسلي اقتراحاتك أو كلمات تريدين إضافتها.</p>
+        <p>ملاحظاتك تهمّنا! أرسل اقتراحاتك أو كلمات تريد إضافتها.</p>
+        <p>البريد الإلكتروني: <a style="color: #a456b8;" class="email-link" href="mailto:hroofi@gmail.com">hroofi@gmail.com</a></p>
         <form class="form" onsubmit="handleContact(event)">
           <div>
             <label for="name">الاسم</label>
@@ -255,8 +257,8 @@
           <div>
             <label for="message">رسالتك</label>
             <textarea id="message" name="message" placeholder="اكتبي رسالتك هنا..."></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit" onclick="new Audio('../Sounds/Sound Effects/Sound.mp3').play()">إرسال</button>
+          </div>  
+          <button class="btn btn-primary" type="submit" onclick="new Audio('Sounds/Sound Effects/Sound.mp3').play()">إرسال</button>
         </form>
       </div>
     </section>
